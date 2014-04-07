@@ -6,12 +6,12 @@
 stompQueueName: /queue/92643.book.orders
 
 # Procurement Service needs to publish to all topics!
-stompTopicName: /topic/92643.book.*
+stompTopicName: /topic/22881.book.*
 
 # TODO: Apollo STOMP Broker URL and login
 #apolloUser: "admin"
 #apolloPassword: "password"
-#apolloHost: "54.215.133.131"
+#apolloHost: "54.193.56.218"
 #apolloPort: 61613
 
 # HTTP-specific options.

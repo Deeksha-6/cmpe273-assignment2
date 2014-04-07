@@ -81,7 +81,7 @@ public class ProcurementResource extends Job {
 	String password = env("APOLLO_PASSWORD", "password");
 	String host = env("APOLLO_HOST", "54.193.56.218");
 	int port = Integer.parseInt(env("APOLLO_PORT", "61613"));
-	String queue = "/queue/92643.book.orders";
+	String queue = "/queue/22881.book.orders";
 	String destination = arg(0, queue);
 	
 	StompJmsConnectionFactory factory = new StompJmsConnectionFactory();
@@ -147,7 +147,7 @@ public class ProcurementResource extends Job {
 	public void sendPostRequest(List<Integer> isbnFromQueue){
 		
 		BookOrder bookOrder = new BookOrder();
-		bookOrder.setId("92643");
+		bookOrder.setId(“22”881);
 		bookOrder.setOrderBookIsbns(isbnFromQueue);
 		
 		Client client = Client.create();
@@ -165,7 +165,7 @@ public class ProcurementResource extends Job {
 		String password = env("APOLLO_PASSWORD", "password");
 		String host = env("APOLLO_HOST", "54.193.56.218");
 		int port = Integer.parseInt(env("APOLLO_PORT", "61613"));
-		String destination = arg(0, "/topic/92643.book."+ category);
+		String destination = arg(0, "/topic/22881.book."+ category);
 
 		StompJmsConnectionFactory factory = new StompJmsConnectionFactory();
 		factory.setBrokerURI("tcp://" + host + ":" + port);
@@ -188,7 +188,7 @@ public class ProcurementResource extends Job {
 	public ShippedBooks getDataFromPublisher(){
 		
 		Client client = Client.create();
-		WebResource webResource = client.resource("http://54.193.56.218:9000/orders/92643");		
+		WebResource webResource = client.resource("http://54.193.56.218:9000/orders/22881”);		
 		ClientResponse response = webResource.accept("application/json").get(ClientResponse.class);
 		ShippedBooks shippedBooks = response.getEntity(ShippedBooks.class);
 		System.out.println("Status returned on GET: " + response.getStatus());
