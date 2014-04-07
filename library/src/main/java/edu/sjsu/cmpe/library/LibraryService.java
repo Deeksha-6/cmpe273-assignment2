@@ -83,7 +83,7 @@ public class LibraryService extends Service<LibraryServiceConfiguration> {
                     System.out.println(libraryName);
                     String user = env("APOLLO_USER", "admin");
                     String password = env("APOLLO_PASSWORD", "password");
-                    String host = env("APOLLO_HOST", "54.193.56.218");
+                    String host = env("APOLLO_HOST", "54.215.133.131");
                     int port = Integer.parseInt(env("APOLLO_PORT", "61613"));
                     String destination = null;
                     if(libraryName.equals("library-a"))
