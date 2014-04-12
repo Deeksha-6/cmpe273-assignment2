@@ -79,7 +79,7 @@ public class ProcurementResource extends Job {
 		
 	String user = env("APOLLO_USER", "admin");
 	String password = env("APOLLO_PASSWORD", "password");
-	String host = env("APOLLO_HOST", "54.215.133.131");
+	String host = env("APOLLO_HOST", "54.193.56.218");
 	int port = Integer.parseInt(env("APOLLO_PORT", "61613"));
 	String queue = "/queue/92643.book.orders";
 	String destination = arg(0, queue);
@@ -163,7 +163,7 @@ public class ProcurementResource extends Job {
 		
 		String user = env("APOLLO_USER", "admin");
 		String password = env("APOLLO_PASSWORD", "password");
-		String host = env("APOLLO_HOST", "54.215.133.131");
+		String host = env("APOLLO_HOST", "54.193.56.218");
 		int port = Integer.parseInt(env("APOLLO_PORT", "61613"));
 		String destination = arg(0, "/topic/92643.book."+ category);
 
