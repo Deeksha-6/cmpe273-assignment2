@@ -9,10 +9,10 @@ stompQueueName: /queue/92643.book.orders
 stompTopicName: /topic/92643.book.*
 
 # TODO: Apollo STOMP Broker URL and login
-#apolloUser: "admin"
-#apolloPassword: "password"
-#apolloHost: "54.215.133.131"
-#apolloPort: 61613
+apolloUser: "admin"
+apolloPassword: "password"
+apolloHost: "54.193.56.218"
+apolloPort: 61613
 
 # HTTP-specific options.
 http:
