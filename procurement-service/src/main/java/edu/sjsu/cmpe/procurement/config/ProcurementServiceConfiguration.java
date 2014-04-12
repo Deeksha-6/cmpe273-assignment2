@@ -21,6 +21,52 @@ public class ProcurementServiceConfiguration extends Configuration {
     /**
      * @return the stompQueueName
      */
+      @NotEmpty
+    @JsonProperty
+    private String apolloUser;
+    @NotEmpty
+    @JsonProperty
+    private String apolloPort;
+    @NotEmpty
+    @JsonProperty
+    private  String apolloHost;
+    @NotEmpty
+    @JsonProperty
+    private  String apolloPassword;
+ 
+      
+       public String getApolloUser() {
+		return apolloUser;
+	}
+
+	public void setApolloUser(String apolloUser) {
+		this.apolloUser = apolloUser;
+	}
+
+	public String getApolloPort() {
+		return apolloPort;
+	}
+
+	public void setApolloPort(String apolloPort) {
+		this.apolloPort = apolloPort;
+	}
+
+	public String getApolloHost() {
+		return apolloHost;
+	}
+
+	public void setApolloHost(String apolloHost) {
+		this.apolloHost = apolloHost;
+	}
+
+	public String getApolloPassword() {
+		return apolloPassword;
+	}
+
+	public void setApolloPassword(String apolloPassword) {
+		this.apolloPassword = apolloPassword;
+	}
+
     public String getStompQueueName() {
 	return stompQueueName;
     }
